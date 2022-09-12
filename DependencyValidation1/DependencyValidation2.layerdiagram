@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="74232962-ee68-44ee-8396-00aa53ac4e95" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <layers>
+    <layer Id="8dd758e1-1139-48b2-a5c1-96e6debfd467" name="BubberDinner.Api.dll">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="1f81c1c9-aa4e-4705-bee3-f78a5cb74ff0" direction="Forward">
+          <layerMoniker Id="bc32d0ca-47a5-4f90-8959-3a0a8c86c5f2" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="d2d32f2f-84c4-44de-be6b-35946e29deb7" direction="Forward">
+          <layerMoniker Id="5583d896-b10c-499a-876c-3ff3b7eb797e" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="658ad57d-72a9-4486-993f-ed3bc44aff4c" name="BubberDinner.Api.dll">
+          <ArtifactNode Label="BubberDinner.Api.dll" Category="CodeSchema_Assembly" Id="(Assembly=&quot;$(DesktopUri)/Git Personal/BubberDinnerApi/BubberDinnerApi/bin/Debug/net6.0/BubberDinner.Api.dll&quot;)" />
+          <ExpandedNode Id="(Assembly=BubberDinner.Api)" Label="BubberDinner.Api.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="bc32d0ca-47a5-4f90-8959-3a0a8c86c5f2" name="BubberDinner.Aplication.dll">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="cffe098f-c7b1-459c-b0c3-723b971d1f77" direction="Forward">
+          <layerMoniker Id="8ac1ec4a-0872-419d-8bbb-7844a139e8b3" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="4f891132-30c0-46da-9c3d-416720926b72" name="BubberDinner.Aplication.dll">
+          <ArtifactNode Label="BubberDinner.Aplication.dll" Category="CodeSchema_Assembly" Id="(Assembly=&quot;$(DesktopUri)/Git Personal/BubberDinnerApi/Aplication/bin/Debug/net6.0/BubberDinner.Aplication.dll&quot;)" />
+          <ExpandedNode Id="(Assembly=BubberDinner.Aplication)" Label="BubberDinner.Aplication.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="5583d896-b10c-499a-876c-3ff3b7eb797e" name="BubberDinner.Contracts.dll">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="4d00b498-c21a-41f2-b5e0-652513a6c9a8" direction="Forward">
+          <layerMoniker Id="bc32d0ca-47a5-4f90-8959-3a0a8c86c5f2" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="2dcc72c0-de6b-435f-9d6a-879e90040ac4" name="BubberDinner.Contracts.dll">
+          <ArtifactNode Label="BubberDinner.Contracts.dll" Category="CodeSchema_Assembly" Id="(Assembly=&quot;$(DesktopUri)/Git Personal/BubberDinnerApi/BubberDinner.Contracts/bin/Debug/net6.0/BubberDinner.Contracts.dll&quot;)" />
+          <ExpandedNode Id="(Assembly=BubberDinner.Contracts)" Label="BubberDinner.Contracts.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="8ac1ec4a-0872-419d-8bbb-7844a139e8b3" name="BubberDinner.Domain.dll">
+      <references>
+        <reference Id="4715fe54-2e16-4980-9b14-c11270dd7a69" name="BubberDinner.Domain.dll">
+          <ArtifactNode Label="BubberDinner.Domain.dll" Category="CodeSchema_Assembly" Id="(Assembly=&quot;$(DesktopUri)/Git Personal/BubberDinnerApi/Domain/bin/Debug/net6.0/BubberDinner.Domain.dll&quot;)" />
+          <ExpandedNode Id="(Assembly=BubberDinner.Domain)" Label="BubberDinner.Domain.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+    <layer Id="2caebb05-4283-43e0-8d30-e0d126885b61" name="BubberDinner.Infraestructure.dll">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="28cd986e-2b2a-4c68-916d-203cf54a6119" direction="Forward">
+          <layerMoniker Id="bc32d0ca-47a5-4f90-8959-3a0a8c86c5f2" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+      <references>
+        <reference Id="092c3235-ff2b-48a3-9ef2-f83eda3d13ee" name="BubberDinner.Infraestructure.dll">
+          <ArtifactNode Label="BubberDinner.Infraestructure.dll" Category="CodeSchema_Assembly" Id="(Assembly=&quot;$(DesktopUri)/Git Personal/BubberDinnerApi/Infraestructure/bin/Debug/net6.0/BubberDinner.Infraestructure.dll&quot;)" />
+          <ExpandedNode Id="(Assembly=BubberDinner.Infraestructure)" Label="BubberDinner.Infraestructure.dll" Category="CodeSchema_Assembly">
+            <LinkCategory Ref="Represents" />
+          </ExpandedNode>
+        </reference>
+      </references>
+    </layer>
+  </layers>
+</layerModel>

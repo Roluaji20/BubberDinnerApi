@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{c28c3b62-1a9e-4e6c-ad4e-a9fdfd55c5b0}</ProjectGuid>
+    <ArchitectureToolsVersion>2.0.0.0</ArchitectureToolsVersion>
+    <Name>DependencyValidation1</Name>
+    <RootNamespace>DependencyValidation1</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <OutputPath>bin\Debug\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <OutputPath>bin\Release\</OutputPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <ItemGroup>
+    <Validate Include="DependencyValidation2.layerdiagram">
+      <SubType>Content</SubType>
+    </Validate>
+    <Validate Include="DependencyValidation2.layerdiagram.layout">
+      <SubType>Content</SubType>
+      <DependentUpon>DependencyValidation2.layerdiagram</DependentUpon>
+    </Validate>
+    <Validate Include="DependencyValidation2.layerdiagram.suppressions">
+      <SubType>Content</SubType>
+      <DependentUpon>DependencyValidation2.layerdiagram</DependentUpon>
+    </Validate>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Aplication\BubberDinner.Aplication.csproj">
+      <Name>BubberDinner.Aplication</Name>
+      <Project>{3a0d3d28-2b3d-47fc-b7a8-ceb197531a3f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\BubberDinner.Contracts\BubberDinner.Contracts.csproj">
+      <Name>BubberDinner.Contracts</Name>
+      <Project>{ca2f507b-2e62-448c-ae49-0a708ffd4202}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\BubberDinnerApi\BubberDinner.Api.csproj">
+      <Name>BubberDinner.Api</Name>
+      <Project>{efda72ea-81f4-4941-8d68-b2509c84e01f}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain\BubberDinner.Domain.csproj">
+      <Name>BubberDinner.Domain</Name>
+      <Project>{c0264f2c-2266-44a8-bbb3-4553427a2a74}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\Infraestructure\BubberDinner.Infraestructure.csproj">
+      <Name>BubberDinner.Infraestructure</Name>
+      <Project>{677857af-066b-47ef-9c30-eba8c0edfe24}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VSToolsPath)\ArchitectureTools\Microsoft.VisualStudio.TeamArchitect.ModelingProject.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>
